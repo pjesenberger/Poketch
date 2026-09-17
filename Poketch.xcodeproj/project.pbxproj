@@ -1,0 +1,562 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 110;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		442486EC3033E59800B6B1F9 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 442486EB3033E59800B6B1F9 /* AppIcon.icon */; };
+		442486ED3033E59800B6B1F9 /* AppIcon.icon in Resources */ = {isa = PBXBuildFile; fileRef = 442486EB3033E59800B6B1F9 /* AppIcon.icon */; };
+		442486EF3035C47600B6B1F9 /* PoketchDigits.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 442486EE3035C47600B6B1F9 /* PoketchDigits.ttf */; };
+		442486F03035C47600B6B1F9 /* PoketchDigits.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 442486EE3035C47600B6B1F9 /* PoketchDigits.ttf */; };
+		44E9F42730337B3200FAA576 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9F42430337B3200FAA576 /* MainView.swift */; };
+		44E9F42830337B3200FAA576 /* PoketchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9F42530337B3200FAA576 /* PoketchApp.swift */; };
+		44E9F42930337B3200FAA576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E9F42330337B3200FAA576 /* Assets.xcassets */; };
+		44E9F4343033931C00FAA576 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E9F4333033931C00FAA576 /* WidgetKit.framework */; };
+		44E9F4363033931C00FAA576 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44E9F4353033931C00FAA576 /* SwiftUI.framework */; };
+		44E9F4473033931E00FAA576 /* PoketchWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 44E9F4313033931C00FAA576 /* PoketchWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		44E9F4553033946F00FAA576 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9F44D3033946F00FAA576 /* AppIntent.swift */; };
+		44E9F4563033946F00FAA576 /* PoketchWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9F44F3033946F00FAA576 /* PoketchWidget.swift */; };
+		44E9F4573033946F00FAA576 /* PoketchWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9F4503033946F00FAA576 /* PoketchWidgetBundle.swift */; };
+		44E9F45A3033948900FAA576 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44E9F42330337B3200FAA576 /* Assets.xcassets */; };
+		44E9F4603033AF1500FAA576 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44E9F44D3033946F00FAA576 /* AppIntent.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44E9F4453033931E00FAA576 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44E9F40D303372AF00FAA576 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44E9F4303033931C00FAA576;
+			remoteInfo = PoketchWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		44E9F44C3033931E00FAA576 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			dstPath = "";
+			dstSubfolder = PlugIns;
+			files = (
+				44E9F4473033931E00FAA576 /* PoketchWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		442486E43033D2F800B6B1F9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		442486EB3033E59800B6B1F9 /* AppIcon.icon */ = {isa = PBXFileReference; lastKnownFileType = folder.iconcomposer.icon; path = AppIcon.icon; sourceTree = "<group>"; };
+		442486EE3035C47600B6B1F9 /* PoketchDigits.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = PoketchDigits.ttf; sourceTree = "<group>"; };
+		44E9F415303372AF00FAA576 /* Poketch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Poketch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44E9F42330337B3200FAA576 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44E9F42430337B3200FAA576 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		44E9F42530337B3200FAA576 /* PoketchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoketchApp.swift; sourceTree = "<group>"; };
+		44E9F4313033931C00FAA576 /* PoketchWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = PoketchWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		44E9F4333033931C00FAA576 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		44E9F4353033931C00FAA576 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		44E9F44D3033946F00FAA576 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		44E9F44E3033946F00FAA576 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		44E9F44F3033946F00FAA576 /* PoketchWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoketchWidget.swift; sourceTree = "<group>"; };
+		44E9F4503033946F00FAA576 /* PoketchWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PoketchWidgetBundle.swift; sourceTree = "<group>"; };
+		44E9F4653033B62800FAA576 /* Poketch.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Poketch.entitlements; sourceTree = "<group>"; };
+		44E9F4663033B64B00FAA576 /* PoketchWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = PoketchWidgetExtension.entitlements; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44E9F412303372AF00FAA576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+			);
+		};
+		44E9F42E3033931C00FAA576 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			files = (
+				44E9F4363033931C00FAA576 /* SwiftUI.framework in Frameworks */,
+				44E9F4343033931C00FAA576 /* WidgetKit.framework in Frameworks */,
+			);
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4483CC6430515FF7008C66EF /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				44E9F42330337B3200FAA576 /* Assets.xcassets */,
+				442486EE3035C47600B6B1F9 /* PoketchDigits.ttf */,
+				442486EB3033E59800B6B1F9 /* AppIcon.icon */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		44E9F40C303372AF00FAA576 = {
+			isa = PBXGroup;
+			children = (
+				44E9F42630337B3200FAA576 /* Poketch */,
+				44E9F4533033946F00FAA576 /* PoketchWidget */,
+				4483CC6430515FF7008C66EF /* Resources */,
+				44E9F4323033931C00FAA576 /* Frameworks */,
+				44E9F416303372AF00FAA576 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44E9F416303372AF00FAA576 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44E9F415303372AF00FAA576 /* Poketch.app */,
+				44E9F4313033931C00FAA576 /* PoketchWidgetExtension.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44E9F42630337B3200FAA576 /* Poketch */ = {
+			isa = PBXGroup;
+			children = (
+				44E9F42530337B3200FAA576 /* PoketchApp.swift */,
+				44E9F42430337B3200FAA576 /* MainView.swift */,
+				442486E43033D2F800B6B1F9 /* Info.plist */,
+				44E9F4653033B62800FAA576 /* Poketch.entitlements */,
+			);
+			path = Poketch;
+			sourceTree = "<group>";
+		};
+		44E9F4323033931C00FAA576 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44E9F4333033931C00FAA576 /* WidgetKit.framework */,
+				44E9F4353033931C00FAA576 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44E9F4533033946F00FAA576 /* PoketchWidget */ = {
+			isa = PBXGroup;
+			children = (
+				44E9F4503033946F00FAA576 /* PoketchWidgetBundle.swift */,
+				44E9F44F3033946F00FAA576 /* PoketchWidget.swift */,
+				44E9F44D3033946F00FAA576 /* AppIntent.swift */,
+				44E9F44E3033946F00FAA576 /* Info.plist */,
+				44E9F4663033B64B00FAA576 /* PoketchWidgetExtension.entitlements */,
+			);
+			path = PoketchWidget;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44E9F414303372AF00FAA576 /* Poketch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44E9F420303372AF00FAA576 /* Build configuration list for PBXNativeTarget "Poketch" */;
+			buildPhases = (
+				44E9F411303372AF00FAA576 /* Sources */,
+				44E9F412303372AF00FAA576 /* Frameworks */,
+				44E9F413303372AF00FAA576 /* Resources */,
+				44E9F44C3033931E00FAA576 /* Embed Foundation Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44E9F4463033931E00FAA576 /* PBXTargetDependency */,
+			);
+			name = Poketch;
+			productName = Poketch;
+			productReference = 44E9F415303372AF00FAA576 /* Poketch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44E9F4303033931C00FAA576 /* PoketchWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44E9F4493033931E00FAA576 /* Build configuration list for PBXNativeTarget "PoketchWidgetExtension" */;
+			buildPhases = (
+				44E9F42D3033931C00FAA576 /* Sources */,
+				44E9F42E3033931C00FAA576 /* Frameworks */,
+				44E9F42F3033931C00FAA576 /* Resources */,
+			);
+			buildRules = (
+			);
+			name = PoketchWidgetExtension;
+			productName = PoketchWidgetExtension;
+			productReference = 44E9F4313033931C00FAA576 /* PoketchWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44E9F40D303372AF00FAA576 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2700;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {
+					44E9F414303372AF00FAA576 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+					44E9F4303033931C00FAA576 = {
+						CreatedOnToolsVersion = 27.0;
+					};
+				};
+			};
+			buildConfigurationList = 44E9F410303372AF00FAA576 /* Build configuration list for PBXProject "Poketch" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44E9F40C303372AF00FAA576;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 44E9F416303372AF00FAA576 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44E9F414303372AF00FAA576 /* Poketch */,
+				44E9F4303033931C00FAA576 /* PoketchWidgetExtension */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44E9F413303372AF00FAA576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				44E9F42930337B3200FAA576 /* Assets.xcassets in Resources */,
+				442486ED3033E59800B6B1F9 /* AppIcon.icon in Resources */,
+				442486EF3035C47600B6B1F9 /* PoketchDigits.ttf in Resources */,
+			);
+		};
+		44E9F42F3033931C00FAA576 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			files = (
+				44E9F45A3033948900FAA576 /* Assets.xcassets in Resources */,
+				442486EC3033E59800B6B1F9 /* AppIcon.icon in Resources */,
+				442486F03035C47600B6B1F9 /* PoketchDigits.ttf in Resources */,
+			);
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44E9F411303372AF00FAA576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				44E9F42730337B3200FAA576 /* MainView.swift in Sources */,
+				44E9F42830337B3200FAA576 /* PoketchApp.swift in Sources */,
+				44E9F4603033AF1500FAA576 /* AppIntent.swift in Sources */,
+			);
+		};
+		44E9F42D3033931C00FAA576 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			files = (
+				44E9F4553033946F00FAA576 /* AppIntent.swift in Sources */,
+				44E9F4563033946F00FAA576 /* PoketchWidget.swift in Sources */,
+				44E9F4573033946F00FAA576 /* PoketchWidgetBundle.swift in Sources */,
+			);
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44E9F4463033931E00FAA576 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44E9F4303033931C00FAA576 /* PoketchWidgetExtension */;
+			targetProxy = 44E9F4453033931E00FAA576 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		44E9F41E303372AF00FAA576 /* Debug configuration for PBXProject "Poketch" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = GJ746626DJ;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44E9F41F303372AF00FAA576 /* Release configuration for PBXProject "Poketch" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = GJ746626DJ;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 27.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44E9F421303372AF00FAA576 /* Debug configuration for PBXNativeTarget "Poketch" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Poketch/Poketch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJ746626DJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Poketch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pokétch";
+				INFOPLIST_KEY_LSApplicationCategoryType = pokemon_pixel_font.ttf;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.jesenberger.pascal.Poketch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44E9F422303372AF00FAA576 /* Release configuration for PBXNativeTarget "Poketch" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Poketch/Poketch.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJ746626DJ;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Poketch/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "Pokétch";
+				INFOPLIST_KEY_LSApplicationCategoryType = pokemon_pixel_font.ttf;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.jesenberger.pascal.Poketch;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_DEFAULT_ACTOR_ISOLATION = MainActor;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44E9F44A3033931E00FAA576 /* Debug configuration for PBXNativeTarget "PoketchWidgetExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PoketchWidget/PoketchWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJ746626DJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PoketchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PoketchWidget;
+				INFOPLIST_KEY_LSApplicationCategoryType = "\"\"";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.jesenberger.pascal.Poketch.PoketchWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44E9F44B3033931E00FAA576 /* Release configuration for PBXNativeTarget "PoketchWidgetExtension" */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = PoketchWidget/PoketchWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = GJ746626DJ;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = PoketchWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PoketchWidget;
+				INFOPLIST_KEY_LSApplicationCategoryType = "\"\"";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = me.jesenberger.pascal.Poketch.PoketchWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				REGISTER_APP_GROUPS = YES;
+				SKIP_INSTALL = YES;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_APPROACHABLE_CONCURRENCY = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_UPCOMING_FEATURE_MEMBER_IMPORT_VISIBILITY = YES;
+				SWIFT_VERSION = 6.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44E9F410303372AF00FAA576 /* Build configuration list for PBXProject "Poketch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44E9F41E303372AF00FAA576 /* Debug configuration for PBXProject "Poketch" */,
+				44E9F41F303372AF00FAA576 /* Release configuration for PBXProject "Poketch" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		44E9F420303372AF00FAA576 /* Build configuration list for PBXNativeTarget "Poketch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44E9F421303372AF00FAA576 /* Debug configuration for PBXNativeTarget "Poketch" */,
+				44E9F422303372AF00FAA576 /* Release configuration for PBXNativeTarget "Poketch" */,
+			);
+			defaultConfigurationName = Release;
+		};
+		44E9F4493033931E00FAA576 /* Build configuration list for PBXNativeTarget "PoketchWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44E9F44A3033931E00FAA576 /* Debug configuration for PBXNativeTarget "PoketchWidgetExtension" */,
+				44E9F44B3033931E00FAA576 /* Release configuration for PBXNativeTarget "PoketchWidgetExtension" */,
+			);
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44E9F40D303372AF00FAA576 /* Project object */;
+	validationLevel = 1;
+}

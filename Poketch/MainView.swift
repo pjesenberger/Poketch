@@ -56,7 +56,8 @@ struct MainView: View {
             ZStack {
                 theme.color(.light)
                 
-                if #available(anyAppleOS 27.1, *) {
+#if canImport(SwiftUI, _version: 8.0.85)
+                if #available(iOS 27.1, *) {
                     GeometryReader { proxy in
                         if proxy.reservedRegions(kind: .division).contains(where: { $0.isActive }) {
                             ArrangementView {
@@ -77,6 +78,9 @@ struct MainView: View {
                 } else {
                     stack
                 }
+#else
+                stack
+#endif
             }
             .ignoresSafeArea()
         }

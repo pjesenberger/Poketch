@@ -14,6 +14,10 @@ Pokétch is a simple iOS widget recreating the Pokétch Clock from Pokémon Diam
 - **Themes** — 8 different themes, just like in the game. Change the current theme in the app. The widget also supports Clear and Tinted modes.
 - **Tap-to-glow** — Tap Pikachu to make the widget glow! The glow stays on to add more customization and color variations.
 
+## Installation
+- **Sideload:** download the `.ipa` from [Releases](../../releases/latest) and install it with [SideStore](https://sidestore.io) or [AltStore](https://altstore.io).
+- **Xcode:** open the project, select your team in Signing & Capabilities, and run it on your iPhone.
+
 ## Important Notes
 Pokémon, Pokétch, Pikachu, and related assets are owned by Nintendo, Creatures Inc., and GAME FREAK inc.
 
